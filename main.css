@@ -7,6 +7,7 @@ body {
   color: #444;
   text-align: center;
   line-height: 1.5;
+  margin: 5% 5%;
 }
 
 nav,
@@ -26,45 +27,51 @@ nav {
 
 nav ul{
   list-style: none;
-  margin: 1px 2px;
+  margin: 3px 2px;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
 }
 
 nav ul li a {
-  color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 header {
   padding: 6% 0;
 }
 
+header > h3 {
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+
+header > img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 4% 0;
   background-color: white;
 }
 
-footer > p {
-  color: white;
-}
-
-footer > p > a {
-  color: white;
-}
-
-
-header > img {
-    border-radius: 50%;
-    width: 30%;
-    height: auto;
+.hobby-icons{
+  border: 0px;
+  width: 15%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -50px;
 }
 
 section > img {
-    width: 90%;
+    width: 75%;
     height: auto;
+    border: 2px solid #ddd;
 }
 
 section > a > img {
@@ -77,8 +84,8 @@ section > a > img {
 
 .app-links {
     color: purple;
-    font-size: 14px;
-    margin: auto 10px;
+    font-size: 15px;
+    margin: auto 25px;
 }
 
 a {
@@ -87,10 +94,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.emoji {
-  font-size: 30px;
 }
 
 .bio {
@@ -109,6 +112,10 @@ a:hover {
   color: #7693bd;
 }
 
+.black {
+  color: black;
+}
+
 h3 {
   font-size: 28px;
 }
@@ -118,29 +125,25 @@ header > h3 {
 }
 
 
+footer > p {
+  color: white;
+}
+
+footer > p > a {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.top-space {
+  margin-top: 30px;
+}
+
+
+
+
 /* phone */
 
 @media screen and (max-width: 768px) {
-
-  main {
-    font-size: 14px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  }
-
-  header {
-    margin: 10px 15px;
-    padding: 20% 0;
-
-  }
-
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-  }
 
 
 
@@ -149,24 +152,28 @@ header > h3 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
   section > a > img {
-    width: 10%;
-}
+      width: 10%;
+  }
 
-nav ul li a {
-  font-size: 16px;
-}
+  nav ul li a {
+    font-size: 16px;
+  }
 
-section > img {
-  width: 60%;
-}
+  section > img {
+    width: 40%;
+  }
 
   header > img {
-    width: 20%;
-}
+    width: 15%;
+  }
 
-section > p {
-  font-size: 18px;
-}
+  section > p {
+    font-size: 18px;
+  }
+
+  .hobby-icons{
+    border: 0px;
+    width: 10%;
 
 }
 
@@ -177,17 +184,18 @@ section > p {
 
 @media screen and (min-width: 1024px) {
 
+  .hobby-icons {
+    width: 3%;
+  }
+
   section > a > img {
-    width: 10%;
-    
-}
+    width: 10%;  
+  } 
 
-section > img {
-  width: 60%;
-}
-
-  header > img {
+  section > img {
     width: 20%;
   }
 
-}
+  body {
+    margin: 2% 2%;
+  }
