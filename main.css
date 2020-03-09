@@ -34,7 +34,7 @@ nav ul{
 }
 
 nav ul li a {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 header {
@@ -59,17 +59,13 @@ section {
   background-color: white;
 }
 
-.hobby-icons{
-  border: 0px;
-  width: 15%;
+.app-image{
+  width: 80%;
   height: auto;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: -50px;
 }
 
 section > img {
-    width: 75%;
+    width: 30%;
     height: auto;
     border: 2px solid #ddd;
 }
@@ -138,25 +134,19 @@ footer > p > a {
   margin-top: 30px;
 }
 
+.hobby-icons{
+  border: none;
+  width: 20%;
+}
 
 
 
-/* phone */
+/* larger screens */
 
-@media screen and (max-width: 768px) {
-
-
-
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
 
   section > a > img {
       width: 10%;
-  }
-
-  nav ul li a {
-    font-size: 16px;
   }
 
   section > img {
@@ -171,31 +161,5 @@ footer > p > a {
     font-size: 18px;
   }
 
-  .hobby-icons{
-    border: 0px;
-    width: 10%;
-
 }
 
-
-
-
-/* larger screens */
-
-@media screen and (min-width: 1024px) {
-
-  .hobby-icons {
-    width: 3%;
-  }
-
-  section > a > img {
-    width: 10%;  
-  } 
-
-  section > img {
-    width: 20%;
-  }
-
-  body {
-    margin: 2% 2%;
-  }
