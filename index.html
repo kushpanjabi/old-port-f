@@ -3,6 +3,7 @@
 <head>
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My personal portfolio">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -11,33 +12,46 @@
 
     <nav role="navigation">
         <ul>
-            <li><a href="#Bio">Bio</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#GitHub">GitHub</a></li>
-            <li><a href="#LinkedIn">LinkedIn</a></li>
+            <li><a class="bio" href="#Bio">Bio</a></li>
+            <li><a class="proj" href="#Projects">Projects</a></li>
+            <li><a class="git" href="#GitHub">GitHub</a></li>
+            <li><a class="linkedin" href="#LinkedIn">LinkedIn</a></li>
         </ul>
     </nav>
 
     <main role="main">
         <header role="banner">
-            <h1>Headline</h1>
+            <h1>Hi, I'm Kush Panjabi</h1>
+            <img src="portfolio-pic.png" alt="Portrait of me">
+            <h2>Los Angeles based Web Developer</h2>
+            <p class="emoji">🌴💻</p><br>
+            <h3>HTML | CSS | JavaScript | jQuery | React | Node.js</h3>
         </header>
 
         <section>
-            <h3>Bio</h3>
+            <h3>A little about me:</h3>
+            <p>When I'm not coding, I'm often found at a coffee shop, on my couch watching Netflix, or on a plane.</p>
         </section>
 
         <section>
             <h1>Portfolio</h1>
+            <h2>1. Quiz App</h2>
+            <img src="quiz-app.png" alt="Screenshot of Quiz App">
+            <p>A multiple-choice Quiz app built with minimalist design using JavaScript/jQuery.</p>
+            <a class="app-links" href="">Live App</a>
+            <a class="app-links" href="">Repo</a>
         </section>
 
         <section>
             <h1>Contact Info</h1>
+            <a class="git" href="https://www.github.com/kushpanjabi"><img src="gh-icon.png" alt="GitHub Icon"></a>
+            <a class="linked" href="https://www.linkedin.com/in/kushpanjabi-70b05979/"><img src="linkedin-icon.png" alt="LinkedIn Icon"></a>
+            <a class="git" href="mailto:kushpanjabi@icloud.com"><img src="email-me-icon.png" alt="Email Icon"></a>
         </section>
     </main>
 
     <footer role="content-info">
-        <p>Footer</p>
+        <p>I love receiving email at: <a href=mailto:kushpanjabi@icloud.com>kushpanjabi@icloud.com</a></p>
     </footer>
 </body>
 </html>

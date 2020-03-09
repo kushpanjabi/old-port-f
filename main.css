@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif; 
-  font-size: 20px;
+  font-family: "Oswald", sans-serif; 
   color: #444;
   text-align: center;
   line-height: 1.5;
@@ -13,7 +12,7 @@ body {
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: black;
 }
 
 nav {
@@ -34,22 +33,26 @@ nav ul{
 }
 
 nav ul li a {
-  color: black;
-  font-size: 16px;
+  color: white;
+  font-size: 18px;
 }
 
 header {
-  padding: 12% 0;
+  padding: 6% 0;
 }
 
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: white;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+footer > p {
+  color: white;
+}
+
+footer > p > a {
+  color: white;
 }
 
 
@@ -73,22 +76,64 @@ section > a > img {
 }
 
 .app-links {
-    color: rgb(83, 3, 83);
-    font-size: 16px;
+    color: purple;
+    font-size: 14px;
     margin: auto 10px;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
 
+.emoji {
+  font-size: 30px;
+}
 
+.bio {
+  color: #b0ffa5;
+}
+
+.proj {
+  color: #ffa5be;
+}
+
+.git {
+  color: #fff8a5;
+}
+
+.linkedin {
+  color: #7693bd;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+header > h3 {
+  color: rgb(79, 101, 226);
+}
 
 
 /* phone */
 
 @media screen and (max-width: 768px) {
 
+  main {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
   header {
     margin: 10px 15px;
+    padding: 20% 0;
+
   }
 
   footer {
@@ -99,12 +144,16 @@ section > a > img {
 
 
 
-
 /* tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
   section > a > img {
     width: 10%;
+}
+
+nav ul li a {
+  font-size: 16px;
 }
 
 section > img {
@@ -113,6 +162,10 @@ section > img {
 
   header > img {
     width: 20%;
+}
+
+section > p {
+  font-size: 18px;
 }
 
 }
