@@ -118,13 +118,24 @@ a:hover {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 22px;
 }
 
-header > h3 {
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+header > h2 {
   color: rgb(226, 79, 194);
 }
 
+.smaller-p {
+  font-size: 22px;
+}
 
 footer > p {
   color: white;
