@@ -3,12 +3,13 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif; 
+  font-family: -apple-system, 'avenir next';
   color: #444;
   text-align: center;
   line-height: 1.5;
   margin: 5% 5%;
 }
+
 
 nav,
 footer {
@@ -34,7 +35,7 @@ nav ul{
 }
 
 nav ul li a {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 header {
@@ -63,16 +64,30 @@ section {
   background-color: white;
 }
 
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #E3D8F1;
+  border-radius: 0%;
+  padding: 2% 3%;
+}
+
 .app-image{
   width: 80%;
   height: auto;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 section > img {
     width: 30%;
     height: auto;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 section > a > img {
@@ -85,8 +100,10 @@ section > a > img {
 
 .app-links {
     color: rgb(255, 0, 119);
-    font-size: 18px;
-    margin: auto 25px;
+    font-size: 14px;
+    padding: 2% 2%;
+    margin: auto 8px;
+    
 }
 
 a {
@@ -118,15 +135,15 @@ a:hover {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 12px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 header > h2 {
@@ -134,7 +151,11 @@ header > h2 {
 }
 
 .smaller-p {
-  font-size: 22px;
+  font-size: 16px;
+}
+
+.e-smaller-p {
+  font-size: 12px;
 }
 
 footer > p {
@@ -155,9 +176,9 @@ footer > p > a {
   border-radius: 0%;
 }
 
-#projects{
-  background-color: #E3D8F1;
-  border-radius: 5%;
+
+.white {
+  color: black;
 }
 
 
@@ -166,16 +187,13 @@ footer > p > a {
 @media screen and (min-width: 768px) {
 
   nav ul li a {
-    font-size: 20px;
+    font-size: 16px;
   }
     
   section > a > img {
       width: 10%;
   }
 
-  section > img {
-    width: 40%;
-  }
 
   header > img {
     width: 15%;
@@ -191,7 +209,8 @@ footer > p > a {
   }
 
   .app-image{
-    width: 40%;
+    width: 100%;
+    height: auto%;
   }
 
   section > a > img {
@@ -200,8 +219,21 @@ footer > p > a {
 }
 
 .app-links{
-  font-size: 22px;
+  font-size: 16px;
 }
+
+#projects {
+  justify-content: flex-start;
+  flex-direction: unset;
+}
+
+
+.app {
+  border-radius: 5%;
+  width: 35%;
+  margin: 5% 5%;
+}
+
 
 
 p {
@@ -214,6 +246,26 @@ footer > p {
 
 footer > p > a:hover {
   color: lightblue;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.smaller-p {
+  font-size: 18px;
+}
+
+.e-smaller-p {
+  font-size: 16px;
 }
 
 }
